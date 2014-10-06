@@ -1,4 +1,23 @@
-\documentclass{book}
+\documentclass[12pt]{book}
+
+\usepackage[longnamesfirst, sort]{natbib}\bibpunct{(}{)}{,}{a}{}{,}
+\usepackage{amsmath}
+\usepackage{url}
+
+%\includeonly{ch1} % if you just want to process this chapter
 
 \begin{document}
+
+\author{Eric Magar}
+\title{Bully Pulpits}
+\date{\today}
+%\maketitle
+
+\include{ch1}
+
+\bibliographystyle{apsr}
+\bibliography{bibclone/magar}
+%\bibliography{bib/magar}
+
+
 \end{document}
