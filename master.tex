@@ -1,24 +1,45 @@
 \documentclass[12pt]{book}
 
-\usepackage[longnamesfirst, sort]{natbib}\bibpunct{(}{)}{,}{a}{}{,}
+\usepackage[longnamesfirst, sort]{natbib}\bibpunct[:]{(}{)}{,}{a}{}{,}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{url}
+
+\usepackage[utf8]{inputenc} % allows direct input of accented and other special characters input directly (instead of \'a etc).
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}        % loads font with all special characters in it
+
+\usepackage[pdftex]{graphicx}
+\usepackage{tikz} % Easier syntax to draw pgf files (invokes pgf automatically)
+\usetikzlibrary{arrows}
+
+\usepackage{epigraph}
+
+\graphicspath{graphs/}
 
 %\includeonly{ch1} % if you just want to process this chapter
 
 \begin{document}
 
 \author{Eric Magar}
-\title{Bully Pulpits}
+\title{Bully Pulpits} %Posturing, bargaining, and polarization in the legislative process of the Americas}
 \date{\today}
-%\maketitle
+\maketitle
 
-%\include{ch0}
+\frontmatter
+\include{ch0}
+\mainmatter
 \include{ch1}
+%\include{ch2}
+%\appendix
+%\backmatter
+
+\begin{footnotesize}
 
 \bibliographystyle{apsr}
 \bibliography{bibclone/magar}
 %\bibliography{bib/magar}
 
+\end{footnotesize}
 
 \end{document}
