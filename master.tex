@@ -1,4 +1,4 @@
-\documentclass[12pt]{book}
+\documentclass[11pt]{book}
 
 \usepackage[longnamesfirst, sort]{natbib}\bibpunct[:]{(}{)}{,}{a}{}{,}
 \usepackage{amsmath}
@@ -15,8 +15,11 @@
 
 \usepackage{epigraph}
 
-\graphicspath{graphs/}
+\graphicspath{{graphs/}} % double braces needed to make this work
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% select what will be included in pdf output (or comment for all) %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\includeonly{ch1} % if you just want to process this chapter
 
 \begin{document}
